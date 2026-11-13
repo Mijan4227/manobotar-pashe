@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>মানবতার পাশে | ক্যান্সার রোগী সহায়তা</title>
+<style>
+:root{--green:#145548;--mint:#e9f4ef;--gold:#e9bd68;--ink:#18332e;--muted:#63736e;--white:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Bengali",sans-serif;color:var(--ink);background:#f7faf8;line-height:1.55}
+header{background:var(--green);color:white;padding:16px max(5vw,18px);display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:1.35rem}nav{display:flex;gap:16px;flex-wrap:wrap}nav a{color:white;text-decoration:none;font-size:.95rem}
+.hero{background:linear-gradient(120deg,#123e35,#236c58);color:white;padding:62px max(5vw,18px);display:grid;grid-template-columns:1.4fr .8fr;gap:30px;align-items:center}
+.hero h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.15;margin:0 0 16px}.hero p{max-width:650px;color:#e4f1eb}
+.btn{border:0;border-radius:10px;padding:12px 18px;background:var(--gold);color:#263b34;font-weight:750;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.secondary{background:white;color:var(--green);border:1px solid #cbdcd4}.hero-card{background:#ffffff14;border:1px solid #ffffff30;padding:22px;border-radius:18px}
+main{max-width:1120px;margin:auto;padding:34px 18px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+h2{margin:0 0 6px;font-size:1.7rem}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:white;border:1px solid #e1ebe5;border-radius:16px;padding:18px;box-shadow:0 5px 18px #163d3010}
+.patient-icon{height:112px;border-radius:12px;background:var(--mint);display:grid;place-items:center;font-size:2.8rem}
+.tag{display:inline-block;background:#edf6f1;color:#1d6653;padding:4px 9px;border-radius:99px;font-size:.78rem;font-weight:700}
+.progress{height:9px;background:#e6eee9;border-radius:99px;overflow:hidden;margin:12px 0}.progress span{display:block;height:100%;background:#29936e}
+.amount{display:flex;justify-content:space-between;font-size:.9rem;gap:8px}.card h3{margin:12px 0 5px}
+.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+form{display:grid;gap:12px}label{font-weight:650;font-size:.92rem}input,select,textarea{width:100%;padding:11px;border:1px solid #cddbd3;border-radius:9px;font:inherit;background:white}textarea{min-height:90px}
+.note{background:#fff8e9;border:1px solid #f0dfb9;padding:14px;border-radius:12px;color:#624b1f;font-size:.9rem}
+footer{background:#123e35;color:#dcece5;padding:26px max(5vw,18px);margin-top:30px}
+.hidden{display:none}.toast{padding:10px;background:#e9f4ef;border-radius:9px;color:#145548;display:none}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}nav{gap:10px}.hero{padding-top:42px;padding-bottom:42px}}
+</style>
+</head>
+<body>
+<header><div class="brand">♡ মানবতার পাশে</div><nav><a href="#patients">রোগীদের আবেদন</a><a href="#apply">আবেদন করুন</a><a href="#donate">সহায়তা করুন</a></nav></header>
+<section class="hero">
+ <div><span class="tag">মানবতার সেবায় একসাথে</span><h1>একটু সহায়তা,<br>একটি নতুন আশার আলো।</h1>
+ <p>ক্যান্সার রোগীদের চিকিৎসার জন্য সহায়তা পৌঁছে দিতে আমরা কাজ করতে চাই। যাচাইকৃত আবেদন দেখে আপনার সামর্থ্য অনুযায়ী পাশে দাঁড়ান।</p>
+ <div class="actions"><a class="btn" href="#patients">রোগীদের সহায়তা করুন</a><a class="btn secondary" href="#apply">সহায়তার আবেদন</a></div></div>
+ <div class="hero-card"><div style="font-size:2.2rem">🤝</div><h2>আপনার সহায়তা মূল্যবান</h2><p>প্রতিটি আবেদন যাচাই করে প্রকাশের লক্ষ্য। অনুদানের হিসাব ও ব্যবহার স্বচ্ছ রাখাই আমাদের অঙ্গীকার।</p><span class="tag">বাংলাদেশ</span></div>
+</section>
+<main>
+<section id="patients"><div class="section-head"><div><h2>সহায়তার অপেক্ষায়</h2><div class="muted">এখানে বাস্তব ও যাচাইকৃত রোগীর আবেদন প্রকাশ করা হবে।</div></div></div>
+<div class="grid" id="patientGrid">
+ <article class="card"><div class="patient-icon">🩺</div><span class="tag">ডেমো কার্ড</span><h3>রোগীর আবেদন এখানে দেখানো হবে</h3><p class="muted">বাস্তব রোগীর তথ্য নয়। যাচাই শেষে রোগীর নাম, চিকিৎসার বিবরণ ও প্রয়োজনীয় অর্থ যুক্ত হবে।</p><div class="progress"><span style="width:0%"></span></div><div class="amount"><span>সংগৃহীত: ৳০</span><b>লক্ষ্য: নির্ধারিত হবে</b></div><div class="actions"><a class="btn" href="#donate">সহায়তার নিয়ম</a></div></article>
+ <article class="card"><div class="patient-icon">💚</div><span class="tag">যাচাই আবশ্যক</span><h3>আপনার আবেদন জমা দিন</h3><p class="muted">চিকিৎসার কাগজপত্র ও যোগাযোগের তথ্যসহ আবেদন করুন।</p><div class="actions"><a class="btn" href="#apply">আবেদন ফর্ম</a></div></article>
+ <article class="card"><div class="patient-icon">🏥</div><span class="tag">স্বচ্ছতা</span><h3>হাসপাতালে সরাসরি বিল</h3><p class="muted">সম্ভব হলে হাসপাতালের বিল যাচাই করে সরাসরি পরিশোধের ব্যবস্থা থাকবে।</p></article>
+</div></section>
+<div class="split">
+<section class="card" id="apply"><h2>রোগীর সহায়তার আবেদন</h2><p class="muted">এই নমুনা ফর্মটি এখন শুধু আপনার ব্রাউজারে ডেমো হিসেবে কাজ করে; অনলাইনে জমা হয় না।</p>
+<form id="applyForm"><div><label>রোগীর নাম</label><input required placeholder="পূর্ণ নাম"></div><div><label>যোগাযোগ নম্বর</label><input required type="tel" placeholder="01XXXXXXXXX"></div><div><label>হাসপাতালের নাম</label><input required placeholder="হাসপাতালের নাম"></div><div><label>চিকিৎসার জন্য প্রয়োজনীয় অর্থ (টাকা)</label><input required type="number" min="1" placeholder="যেমন ২০০০০০"></div><div><label>চিকিৎসার সংক্ষিপ্ত বিবরণ</label><textarea required placeholder="রোগ নির্ণয়, চিকিৎসা ও প্রয়োজনের বিবরণ"></textarea></div><button class="btn" type="submit">ডেমো আবেদন দেখুন</button><div class="toast" id="applyToast"></div></form></section>
+<section class="card" id="donate"><h2>কীভাবে অনুদান করবেন</h2><p>প্রাথমিক পর্যায়ে অনুদান গ্রহণের আগে অফিসিয়াল যোগাযোগ ও যাচাই প্রক্রিয়া চালু করতে হবে।</p><ol><li>রোগীর যাচাইকৃত প্রোফাইল নির্বাচন করুন।</li><li>অনুদান সরাসরি রোগীকে দেবেন, নাকি হাসপাতালের বিল দেবেন তা নিশ্চিত করুন।</li><li>লেনদেনের রসিদ সংরক্ষণ করুন এবং প্ল্যাটফর্মে হিসাব হালনাগাদ করুন।</li></ol>
+<div class="note"><b>গুরুত্বপূর্ণ:</b> এখনো কোনো বিকাশ/নগদ নম্বর বা পেমেন্ট গেটওয়ে যুক্ত নেই। যাচাই ও বৈধ পরিচালন কাঠামো তৈরি না হওয়া পর্যন্ত এই সাইটে টাকা পাঠাবেন না।</div></section>
+</div>
+<section class="card" style="margin-top:18px"><h2>বিশ্বাস ও নিরাপত্তা</h2><p class="muted">রোগীর পরিচয় ও চিকিৎসার নথি প্রকাশের আগে সম্মতি নিতে হবে। পরিচয়, চিকিৎসার কাগজপত্র, অনুদান ও ব্যয়ের হিসাব যাচাই করে তবেই আবেদন প্রকাশ করা উচিত। ব্যক্তিগত নথি কখনো উন্মুক্ত GitHub ফাইলে রাখা যাবে না।</p></section>
+</main>
+<footer><b>♡ মানবতার পাশে</b><p>ক্যান্সার রোগীদের পাশে দাঁড়ানোর একটি মানবিক উদ্যোগ।</p><small>প্রাথমিক বিনামূল্যের ডেমো • এখনো অনুদান গ্রহণের জন্য প্রস্তুত নয়</small></footer>
+<script>
+document.getElementById('applyForm').addEventListener('submit',function(e){e.preventDefault();const t=document.getElementById('applyToast');t.style.display='block';t.textContent='ডেমো সফল: ফর্মের তথ্য এই ব্রাউজারে সার্ভারে পাঠানো হয়নি। প্রকৃত আবেদন চালু করতে নিরাপদ ডেটাবেজ ও অ্যাডমিন যাচাই যুক্ত করতে হবে।';});
+</script>
+</body></html>
